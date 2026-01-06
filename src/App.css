@@ -6,7 +6,7 @@
 .page {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 12px;
   padding: 0 0 36px;
   background: #f7f7f7;
 }
@@ -140,6 +140,10 @@
   overflow: hidden;
   min-height: 420px;
   box-shadow: none;
+}
+
+.hero + .panel.dark {
+  margin-top: -24px;
 }
 
 .panel.dark .eyebrow {
@@ -639,7 +643,7 @@
 }
 
 .journey {
-  background: transparent;
+  background: linear-gradient(180deg, rgba(235, 235, 235, 0.95) 0%, rgba(200, 200, 200, 0.95) 55%, rgba(150, 150, 150, 0.98) 100%);
   border-radius: 0;
   padding: 8px 18px 20px;
   display: flex;
