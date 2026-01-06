@@ -139,28 +139,32 @@ function App() {
         <p className="eyebrow gold">함께 만드는 건강 루틴, MOTIDAY</p>
         <h2>MOTIDAY는 혼자 버티게 두지 않습니다.</h2>
         <p className="structure-sub">
-          대신, 흐름이 끊기지 않게 곁에서 붙잡아주는 구조를 만듭니다.
+          대신, 흐름이 끊기지 않게
+          <br />
+          곁에서 붙잡아주는 구조를 만듭니다.
         </p>
         <div className="reminder-card">
-          <img src={chat1} alt="리마인드 메시지 예시" className="chat-img" />
-          <div className="reminder-bubble">
-            <img src={chat2} alt="운동 인증 예시" />
+          <div className="chat-bubble primary">
+            동동님 오늘 20시에 러닝 가는 날입니다.
+            <br />
+            추운 날씨지만 힘내서 다녀오세요!
+          </div>
+          <div className="chat-bubble secondary">
+            무무님 오늘 18시에 헬스 다녀오기로 한 날인데,
+            <br />
+            다녀 오셨나요? 인증 남겨주세요!
           </div>
         </div>
-        <div className="structure-list">
-          <div className="chip">
-            <span>혼자 하다 쳐지지 않게, </span>
-            <strong>페이스 메이커</strong>
-          </div>
-          <div className="chip">
-            <span>까먹고 미루지 않게, </span>
-            <strong>움직이게 만드는 구조</strong>
-          </div>
-          <div className="chip">
-            <span>나만 포기해도 끝나지 않게, </span>
-            <strong>함께하는 사람들</strong>
-          </div>
-        </div>
+        <ul className="structure-list">
+          <li>미리 정한 요일과 시간에 맞춰, 리마인드해주고</li>
+          <li>잘한 날뿐 아니라, 못한 날도 남기게 만들고</li>
+          <li>매주, 그리고 마지막에, 내가 어떻게 해왔는지 정리합니다.</li>
+        </ul>
+        <p className="structure-quote">
+          우리가 만들고자 하는 것은 단 하나입니다.
+          <br />
+          한 번쯤 쉬어도, 완전히 멈추지 않게 만드는 것.
+        </p>
       </section>
 
       <section className="circle">
