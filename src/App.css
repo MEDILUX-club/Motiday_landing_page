@@ -6,9 +6,9 @@
 .page {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 4px;
   padding: 0 0 36px;
-  background: #f7f7f7;
+  background: #ffffff;
 }
 
 .hero {
@@ -26,7 +26,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  min-height: 520px;
+  min-height: 440px;
 }
 
 .hero-overlay {
@@ -513,7 +513,7 @@
 }
 
 .circle {
-  background: transparent;
+  background: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -643,9 +643,9 @@
 }
 
 .journey {
-  background: linear-gradient(180deg, rgba(235, 235, 235, 0.95) 0%, rgba(200, 200, 200, 0.95) 55%, rgba(150, 150, 150, 0.98) 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #e1e1e1 55%, #9b9b9b 100%);
   border-radius: 0;
-  padding: 8px 18px 20px;
+  padding: 18px 18px 20px;
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -655,7 +655,7 @@
 .journey-grid {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 20px;
 }
 
 .journey-card {
@@ -851,7 +851,7 @@
 }
 
 .pricing {
-  padding: 0 18px;
+  padding: 30px 18px;
 }
 
 .pricing-inner {
