@@ -168,20 +168,27 @@ function App() {
 
       <section className="circle">
         <div className="circle-inner">
-          <div className="circle-title">
-            <span className="dot" />
-            MOTIDAY는 사람 + 구조로 작동합니다
+          <div className="circle-logo">
+            <img src={logoMark} alt="MOTIDAY" />
+            <span>MOTIDAY</span>
           </div>
-          <div className="chip wide">혼자 하다 쳐지지 않게, 페이스 메이커</div>
-          <div className="chip wide">까먹고 미루지 않게, 움직이게 만드는 구조</div>
-          <div className="chip wide">나만 포기해도 끝나지 않게, 함께하는 사람들</div>
+          <p className="circle-tagline">그래서 MOTIDAY는 다르게 시작합니다</p>
+          <div className="circle-chips">
+            <div className="circle-chip">혼자 하다 쳐지지 않게, 페이스 메이커</div>
+            <div className="circle-chip">까먹고 미루지 않게, 움직이게 만드는 구조</div>
+            <div className="circle-chip">나만 포기해도 끝나지 않게, 함께하는 사람들</div>
+          </div>
+          <p className="circle-caption">
+            MOTIDAY는 <span className="circle-highlight">‘사람 + 구조’</span>로 작동하는 환경 안에서
+            <br />
+            <span className="circle-highlight">3주를 끝까지</span> 이어가게 합니다.
+          </p>
         </div>
-        <p className="circle-caption">
-          MOTIDAY는 ‘사람 + 구조’로 작동하는 환경 안에서
-          <br />
-          3주를 끝까지 이어가게 합니다.
-        </p>
-        <p className="circle-foot">그래서 MOTIDAY는 다르게 시작합니다</p>
+        <div className="circle-dots">
+          <span className="circle-dot dot-lg" />
+          <span className="circle-dot dot-md" />
+          <span className="circle-dot dot-sm" />
+        </div>
       </section>
 
       <section className="journey">

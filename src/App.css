@@ -513,31 +513,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
-  padding: 16px 0 10px;
+  gap: 16px;
+  padding: 18px 0 12px;
 }
 
 .circle-inner {
   width: 100%;
-  max-width: 420px;
+  max-width: 520px;
   aspect-ratio: 1 / 1;
   background: #ffc01a;
   border-radius: 999px;
-  padding: 44px 26px 40px;
+  padding: 56px 36px 52px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 16px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
-  box-shadow: 0 16px 40px rgba(255, 186, 2, 0.35);
+  box-shadow: none;
 }
 
 .circle-logo {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 30px;
+  gap: 10px;
+  font-size: 32px;
   font-weight: 800;
   color: #2b2b2b;
 }
@@ -549,13 +549,10 @@
 }
 
 .circle-tagline {
-  margin: -6px 0 0;
-  font-size: 15px;
+  margin: -2px 0 2px;
+  font-size: 16px;
   font-weight: 700;
   color: #2b2b2b;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 6px;
   position: relative;
 }
 
@@ -574,26 +571,26 @@
 .circle-chips {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
   width: 100%;
 }
 
 .circle-chip {
   width: 100%;
-  background: #fff2cb;
+  background: #fff4d4;
   border-radius: 999px;
-  padding: 11px 16px;
-  font-size: 14px;
+  padding: 12px 18px;
+  font-size: 15px;
   font-weight: 600;
   color: #2b2b2b;
 }
 
 .circle-caption {
-  margin: 14px 0 0;
+  margin: 8px 0 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
-  line-height: 1.6;
+  line-height: 1.7;
   color: #2b2b2b;
 }
 
