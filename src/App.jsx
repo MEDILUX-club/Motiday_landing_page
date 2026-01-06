@@ -8,7 +8,6 @@ import maker4 from './assets/Ellipse 2.png'
 import maker5 from './assets/Ellipse 7.png'
 import chat1 from './assets/image4.png'
 import chat2 from './assets/image5.png'
-import collage from './assets/image3.png'
 import report1 from './assets/image2.png'
 import report2 from './assets/image1.png'
 import wave from './assets/Vector.svg'
@@ -191,64 +190,84 @@ function App() {
           <p>신청부터 종료까지, 한 번에 보는 3주 여정</p>
         </header>
         <div className="journey-grid">
-          <div className="journey-card">
-            <div className="card-head">
+          <div className="journey-card step">
+            <div className="card-head centered">
               <span className="number">01</span>
               <span className="title">시작 전</span>
             </div>
-            <ul className="body">
-              <li>목표 횟수: 주 3회</li>
-              <li>러닝+PT 해서 매주 최소 2~3회</li>
-              <li>힘 빼는 히스: 월/목</li>
-              <li>룰: 하루 빠져도 흐름 끊기지 않게 기록</li>
-              <li>자기 효능감 점수(주 관점): 매주 기록</li>
-            </ul>
+            <div className="step-rows">
+              <div className="row">
+                <span>목표 횟수</span>
+                <strong>주 3회 이상</strong>
+              </div>
+              <div className="row">
+                <span>1주차 예시</span>
+                <strong>월, 수, 금</strong>
+              </div>
+              <div className="row">
+                <span>진행 시간</span>
+                <strong>20~22시</strong>
+              </div>
+            </div>
+            <div className="divider" />
+            <p className="step-desc">
+              주 몇 회 할지 정하고, 요일과 시간까지 사전에 설정합니다.
+              <br />
+              구체적인 목표를 하나로 정합니다.
+            </p>
           </div>
 
-          <div className="journey-card">
-            <div className="card-head">
+          <div className="journey-card step">
+            <div className="card-head centered">
               <span className="number">02</span>
               <span className="title">매일</span>
             </div>
-            <div className="daily-wrap">
-              <img src={chat1} alt="리마인드 예시" className="daily-img" />
-              <div className="daily-stack">
-                <img src={collage} alt="앱 화면 예시" className="daily-img tall" />
-                <div className="badge muted">걸리는 시간은 1분 내외</div>
+            <div className="daily-layout">
+              <div className="daily-images">
+                <img src={chat2} alt="운동 인증 예시" />
+                <img src={chat1} alt="리마인드 예시" />
+              </div>
+              <div className="daily-text">
+                <p>했으면 성공 기록 + 한 줄 코멘트</p>
+                <p>못 했어도 실패 기록</p>
+                <p>
+                  걸리는 시간은 <strong>1분</strong>
+                </p>
+                <div className="example-box">
+                  <span>예시 인증 기록</span>
+                  <p>“30분 러닝 + 스트레칭 완료. 오늘은 속도보다 완주에 집중했습니다.”</p>
+                </div>
               </div>
             </div>
-            <ul className="body">
-              <li>정한 시간에 맞춰 리마인드</li>
-              <li>됐든, 안 됐든 기록만 하면 OK</li>
-            </ul>
           </div>
 
-          <div className="journey-card">
-            <div className="card-head">
+          <div className="journey-card step">
+            <div className="card-head centered">
               <span className="number">03</span>
               <span className="title">매주</span>
             </div>
-            <ul className="body">
-              <li>내 루틴 진행 상황 한눈에 정리</li>
-              <li>모티메이커·참여자 평균과 함께 비교</li>
-              <li>다음 주를 위한 한 줄 제안</li>
-            </ul>
+            <div className="step-list">
+              <p>내 루틴 진행 상황 한눈에 정리</p>
+              <p>모티메이커·참여자 평균과 함께 비교</p>
+              <p>다음 주를 위한 한 줄 제안</p>
+            </div>
           </div>
 
-          <div className="journey-card">
-            <div className="card-head">
+          <div className="journey-card step">
+            <div className="card-head centered">
               <span className="number">04</span>
               <span className="title">종료 후</span>
             </div>
-            <div className="report-wrap">
-              <img src={report1} alt="3주 리포트 예시" className="report-main" />
-              <img src={report2} alt="루틴 리포트 예시" className="report-sub" />
+            <div className="step-list">
+              <p>3주간의 결과를 한 장으로 돌아보기</p>
+              <p>내 패턴을 분석해 다음 루틴의 기준점 설정</p>
+              <p>끝이 아닌 새로운 시작, 다음 3주 루틴으로 자연스럽게 확장</p>
             </div>
-            <ul className="body">
-              <li>3주간의 결과를 한 장으로 돌아보기</li>
-              <li>내 패턴을 분석해 다음 루틴의 기준점 설정</li>
-              <li>끝이 아닌 새로운 시작으로 자연스럽게 확장</li>
-            </ul>
+            <div className="report-stack">
+              <img src={report1} alt="3주 리포트 예시" className="report-top" />
+              <img src={report2} alt="루틴 리포트 예시" className="report-left" />
+              <img src={report2} alt="루틴 리포트 예시" className="report-right" />
+            </div>
           </div>
         </div>
       </section>

@@ -513,64 +513,136 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  padding: 8px 0 4px;
+  gap: 14px;
+  padding: 16px 0 10px;
 }
 
 .circle-inner {
-  width: 300px;
+  width: 100%;
+  max-width: 420px;
   aspect-ratio: 1 / 1;
   background: #ffc01a;
   border-radius: 999px;
-  padding: 32px 22px;
+  padding: 44px 26px 40px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 18px;
   align-items: center;
   justify-content: center;
   text-align: center;
   box-shadow: 0 16px 40px rgba(255, 186, 2, 0.35);
 }
 
-.circle-title {
-  display: inline-flex;
+.circle-logo {
+  display: flex;
   align-items: center;
   gap: 8px;
+  font-size: 30px;
+  font-weight: 800;
+  color: #2b2b2b;
+}
+
+.circle-logo img {
+  width: 32px;
+  height: 32px;
+  margin-top: -6px;
+}
+
+.circle-tagline {
+  margin: -6px 0 0;
+  font-size: 15px;
   font-weight: 700;
-  font-size: 13px;
+  color: #2b2b2b;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+  position: relative;
 }
 
-.circle .dot {
-  width: 8px;
-  height: 8px;
+.circle-tagline::before {
+  content: '';
+  position: absolute;
+  top: -14px;
+  right: 4px;
+  width: 4px;
+  height: 4px;
+  background: #2b2b2b;
   border-radius: 999px;
-  background: #171717;
+  box-shadow: -10px 0 0 #2b2b2b, 10px 0 0 #2b2b2b;
 }
 
-.chip.wide {
-  max-width: none;
+.circle-chips {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   width: 100%;
-  background: #ffeab4;
-  font-weight: 600;
 }
 
-.circle-caption,
-.circle-foot {
-  margin: 0;
+.circle-chip {
+  width: 100%;
+  background: #fff2cb;
+  border-radius: 999px;
+  padding: 11px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2b2b2b;
+}
+
+.circle-caption {
+  margin: 14px 0 0;
   text-align: center;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 700;
   line-height: 1.6;
   color: #2b2b2b;
 }
 
-.circle-foot {
+.circle-highlight {
+  background: #ffffff;
+  padding: 0 4px;
+  border-radius: 2px;
+  box-decoration-break: clone;
+}
+
+.circle-dots {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.circle-dot {
+  display: inline-block;
+  border-radius: 999px;
+  background: #ffc01a;
+}
+
+.circle-dot.dot-lg {
+  width: 20px;
+  height: 20px;
+}
+
+.circle-dot.dot-md {
+  width: 12px;
+  height: 12px;
+  opacity: 0.7;
+}
+
+.circle-dot.dot-sm {
+  width: 6px;
+  height: 6px;
+  opacity: 0.5;
+}
+
+.accent {
+  color: #a65f00;
   font-weight: 700;
 }
 
 .journey {
   background: transparent;
   border-radius: 0;
-  padding: 0 18px 20px;
+  padding: 8px 18px 20px;
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -584,13 +656,13 @@
 }
 
 .journey-card {
-  padding: 14px;
-  border-radius: 16px;
-  background: #fafafa;
-  border: 1px solid #ffc01a;
+  padding: 18px;
+  border-radius: 24px;
+  background: #ffffff;
+  border: 2px solid #ffc01a;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .card-head {
@@ -599,93 +671,157 @@
   gap: 8px;
 }
 
+.card-head.centered {
+  justify-content: center;
+}
+
 .number {
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
   background: #ffba02;
   border-radius: 999px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
 }
 
 .title {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   color: #171717;
 }
 
-.body {
+.step-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  color: #3d3d3d;
+}
+
+.step-rows .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step-rows strong {
+  color: #171717;
+  font-weight: 700;
+}
+
+.divider {
+  height: 1px;
+  background: #e1e1e1;
+  margin: 6px 0 2px;
+}
+
+.step-desc {
   margin: 0;
-  padding-left: 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  color: #262626;
-  font-size: 12px;
-}
-
-.body li {
-  line-height: 1.5;
-}
-
-.daily-wrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.daily-img {
-  width: 100%;
-  border-radius: 12px;
-  background: #eaeaea;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
-}
-
-.daily-img.tall {
-  height: 100%;
-  object-fit: cover;
-}
-
-.daily-stack {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.badge.muted {
-  background: #f2f2f2;
-  border-radius: 12px;
-  padding: 8px 10px;
-  font-size: 12px;
-  color: #2c2c2c;
   text-align: center;
-  font-weight: 600;
-  border: 1px solid #e4e4e4;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #5c5c5c;
 }
 
-.report-wrap {
+.daily-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 12px;
   align-items: center;
 }
 
-.report-main {
-  width: 100%;
-  border-radius: 12px;
-  border: 1px solid #ffd36a;
-  box-shadow: 0 10px 22px rgba(255, 186, 2, 0.18);
+.daily-images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.report-sub {
+.daily-images img {
   width: 100%;
+  border-radius: 16px;
+  background: #d8e3ec;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.daily-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: #3d3d3d;
+}
+
+.daily-text strong {
+  color: #ffba02;
+}
+
+.example-box {
+  margin-top: 8px;
+  padding: 10px 12px;
   border-radius: 12px;
+  border: 1px solid #e6e6e6;
+  background: #ffffff;
+}
+
+.example-box span {
+  display: block;
+  font-size: 11px;
+  color: #9a9a9a;
+  margin-bottom: 4px;
+}
+
+.example-box p {
+  margin: 0;
+  font-size: 12px;
+  color: #333333;
+  line-height: 1.5;
+}
+
+.step-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #3d3d3d;
+}
+
+.report-stack {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  margin-top: 8px;
+}
+
+.report-stack img {
+  position: absolute;
+  width: 55%;
+  border-radius: 14px;
   border: 1px solid #ffd36a;
-  box-shadow: 0 10px 22px rgba(255, 186, 2, 0.12);
+  box-shadow: 0 12px 22px rgba(255, 186, 2, 0.2);
+}
+
+.report-top {
+  left: 22.5%;
+  top: 0;
+  z-index: 3;
+}
+
+.report-left {
+  left: 0;
+  top: 20px;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+.report-right {
+  right: 0;
+  top: 20px;
+  z-index: 1;
+  opacity: 0.85;
 }
 
 .pricing {
@@ -922,6 +1058,6 @@
   }
 
   .circle-inner {
-    width: 260px;
+    max-width: 320px;
   }
 }
