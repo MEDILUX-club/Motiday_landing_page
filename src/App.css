@@ -559,13 +559,13 @@
 .circle-tagline::before {
   content: '';
   position: absolute;
-  top: -14px;
-  right: 4px;
+  top: -4px;
+  left: 56%;
   width: 4px;
   height: 4px;
   background: #2b2b2b;
   border-radius: 999px;
-  box-shadow: -10px 0 0 #2b2b2b, 10px 0 0 #2b2b2b;
+  box-shadow: 14px 0 0 #2b2b2b, 28px 0 0 #2b2b2b;
 }
 
 .circle-chips {
@@ -579,9 +579,9 @@
   width: 100%;
   background: #fff4d4;
   border-radius: 999px;
-  padding: 12px 18px;
+  padding: 8px 18px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   color: #2b2b2b;
 }
 
