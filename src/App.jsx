@@ -235,14 +235,16 @@ function App() {
                 </p>
                 <div className="example-box">
                   <span>예시 인증 기록</span>
-                  <p>“30분 러닝 + 스트레칭 완료. 오늘은 속도보다 완주에 집중했습니다.”</p>
+                  <p>“30분 러닝 + 스트레칭 완료. 
+                    <br />
+                    오늘은 속도보다 완주에 집중했습니다.”</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="journey-card step">
-            <div className="card-head centered">
+            <div clas sName="card-head centered">
               <span className="number">03</span>
               <span className="title">매주</span>
             </div>
