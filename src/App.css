@@ -697,7 +697,7 @@
 .step-rows {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 7px;
   font-size: 14px;
   color: #3d3d3d;
 }
@@ -749,9 +749,13 @@
 .daily-text {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 1px;
   font-size: 14px;
   color: #3d3d3d;
+}
+
+.daily-text p {
+  margin: 0;
 }
 
 .daily-text strong {
