@@ -276,7 +276,7 @@ function App() {
             <div className="step-list">
               <p>3주간의 결과를 한 장으로 돌아보기</p>
               <p>내 패턴을 분석해 다음 루틴의 기준점 설정</p>
-              <p>끝이 아닌 새로운 시작, 다음 3주 루틴으로 자연스럽게 확장</p>
+              <p className="nowrap">끝이 아닌 새로운 시작, 다음 3주 루틴으로 자연스럽게 확장</p>
             </div>
             <div className="report-stack">
               <img src={report2} alt="3주 리포트 예시" className="report-top" />

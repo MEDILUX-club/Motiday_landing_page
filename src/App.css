@@ -808,6 +808,11 @@
   margin: 3px 0;
 }
 
+.step-list .nowrap {
+  white-space: nowrap;
+  font-size: clamp(12px, 3.2vw, 14px);
+}
+
 .report-stack {
   position: relative;
   width: 100%;
