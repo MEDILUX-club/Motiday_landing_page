@@ -351,7 +351,14 @@ function App() {
           <br />
           <span className="big">‘하고 있는 사람’</span>으로 시작해보세요
         </p>
-        <button className="primary-cta wide">👉 3주 운동 루틴 시작하기</button>
+        <a
+          className="primary-cta wide"
+          href="https://forms.gle/MuSxqxU2bWESGzmp8"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          👉 3주 운동 루틴 시작하기
+        </a>
       </section>
     </main>
   )
