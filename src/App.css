@@ -665,6 +665,12 @@
   gap: 12px;
 }
 
+.journey-card.step.step-final {
+  padding: 24px 18px 48px;
+  min-height: 1100px;
+  height: auto;
+}
+
 .card-head {
   display: flex;
   align-items: center;
@@ -801,43 +807,44 @@
 .report-stack {
   position: relative;
   width: 100%;
-  height: 270px;
-  margin-top: 18px;
+  height: 320px;
 }
 
 .report-stack img {
   position: absolute;
-  width: 60%;
+  width: 52%;
   border-radius: 14px;
   border: 1px solid #ffd36a;
   box-shadow: 0 12px 22px rgba(255, 186, 2, 0.2);
 }
 
 .report-top {
-  left: 20%;
+  left: 50%;
   bottom: 0;
   z-index: 3;
-  box-shadow: 0 18px 28px rgba(255, 186, 2, 0.3);
+  transform: translateX(-50%);
 }
 
 .report-left {
-  left: 3%;
+  left: 9%;
   bottom: 0;
   z-index: 1;
   opacity: 1;
-  width: 34%;
+  width: 30%;
   transform: scale(0.88);
   transform-origin: bottom left;
+  box-shadow: none;
 }
 
 .report-right {
-  right: 3%;
+  right: 9%;
   bottom: 0;
   z-index: 1;
   opacity: 1;
-  width: 34%;
+  width: 30%;
   transform: scale(0.88);
   transform-origin: bottom right;
+  box-shadow: none;
 }
 
 .pricing {
@@ -1027,26 +1034,6 @@
 }
 
 @media (max-width: 360px) {
-  .report-stack {
-    height: 230px;
-  }
-
-  .report-stack img {
-    width: 64%;
-  }
-
-  .report-top {
-    left: 18%;
-    bottom: 0;
-  }
-
-  .report-left,
-  .report-right {
-    bottom: 0;
-    width: 40%;
-    transform: scale(0.88);
-  }
-
   .maker-grid {
     height: 200px;
   }
