@@ -120,19 +120,16 @@ function App() {
           ))}
         </div>
         <div className="support-note">
-          <p>
-            쳐질 때 다시 움직이게, 페이스를 잡아주고
-            <br />
-            비슷한 경험과 시행착오를 공유해주고
-            <br />
-            누군가는 이미 하고 있는 모습을 보여줍니다
-          </p>
+          <ul className="support-list">
+            <li>쳐질 때 다시 움직이게, 페이스를 잡아주고</li>
+            <li>비슷한 경험과 시행착오를 공유해주고</li>
+            <li>누군가는 이미 하고 있는 모습을 보여줍니다</li>
+          </ul>
           <div className="support-card">
-            <div className="bar accent" />
             <p>
               혼자서는 멈췄던 운동,
               <br />
-              이번엔 혼자가 아니어서 이어집니다.
+              이번엔 <span className="highlight-text">혼자가 아니어서</span> 이어집니다.
             </p>
           </div>
         </div>

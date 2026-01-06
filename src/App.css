@@ -325,9 +325,36 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.6;
   color: #262626;
+  align-items: center;
+}
+
+.support-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.support-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.support-list li::before {
+  content: '•';
+  width: 12px;
+  text-align: center;
+}
+.support-list li::before {
+  content: '•';
+  margin-right: 8px;
 }
 
 .support-card {
@@ -337,26 +364,27 @@
   padding: 16px;
   border: 1px solid #ffe3a4;
   text-align: center;
+  width: 100%;
 }
 
 .support-card .bar {
-  position: absolute;
-  width: 110px;
-  height: 5px;
-  background: #ffc11d;
-  top: 44px;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0.9;
+  display: none;
 }
 
 .support-card p {
   margin: 0;
   position: relative;
   z-index: 1;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.5;
+}
+
+.support-card .highlight-text {
+  background: #ffc11d;
+  padding: 0 4px;
+  border-radius: 2px;
+  box-decoration-break: clone;
 }
 
 .structure {
