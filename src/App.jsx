@@ -1,11 +1,11 @@
 import './App.css'
 import heroImage from './assets/image6.png'
 import logoMark from './assets/Frame 2147227241.png'
-import maker1 from './assets/Ellipse 2.png'
+import maker1 from './assets/Ellipse 6.png'
 import maker2 from './assets/Ellipse 4.png'
-import maker3 from './assets/Ellipse 6.png'
-import maker4 from './assets/Ellipse 7.png'
-import maker5 from './assets/Ellipse 8.png'
+import maker3 from './assets/Ellipse 8.png'
+import maker4 from './assets/Ellipse 2.png'
+import maker5 from './assets/Ellipse 7.png'
 import chat1 from './assets/image4.png'
 import chat2 from './assets/image5.png'
 import collage from './assets/image3.png'
@@ -15,10 +15,10 @@ import wave from './assets/Vector.svg'
 
 const makers = [
   { name: '러닝널스', img: maker1 },
-  { name: '생활밀착형러너', img: maker2 },
-  { name: '베리베리', img: maker3 },
+  { name: '베리베리', img: maker2 },
+  { name: '텐미닛 플로우메이커', img: maker3 },
   { name: '근육파수꾼', img: maker4 },
-  { name: '텐미닛 플로우메이커', img: maker5 },
+  { name: '밀착형 러너', img: maker5 },
 ]
 
 const faqs = [
@@ -107,7 +107,9 @@ function App() {
           <h3>
             함께 가는 사람, <span className="highlight">MOTIMAKER</span>
           </h3>
-          <p>모티데이 사전 기수에서 검증된 갓생러, 함께할 페이스메이커입니다.</p>
+          <p>모티데이 사전 기수에서 검증된 갓생러, 
+             <br />
+            함께할 페이스메이커입니다.</p>
         </header>
         <div className="maker-grid">
           {makers.map((maker) => (
