@@ -266,9 +266,9 @@ function App() {
               <p>끝이 아닌 새로운 시작, 다음 3주 루틴으로 자연스럽게 확장</p>
             </div>
             <div className="report-stack">
-              <img src={report1} alt="3주 리포트 예시" className="report-top" />
-              <img src={report2} alt="루틴 리포트 예시" className="report-left" />
-              <img src={report2} alt="루틴 리포트 예시" className="report-right" />
+              <img src={report2} alt="3주 리포트 예시" className="report-top" />
+              <img src={report1} alt="루틴 리포트 예시" className="report-left" />
+              <img src={report1} alt="루틴 리포트 예시" className="report-right" />
             </div>
           </div>
         </div>
