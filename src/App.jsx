@@ -257,7 +257,7 @@ function App() {
           </div>
 
           <div className="journey-card step">
-            <div clas sName="card-head centered">
+            <div className="card-head centered">
               <span className="number">03</span>
               <span className="title">매주</span>
             </div>
