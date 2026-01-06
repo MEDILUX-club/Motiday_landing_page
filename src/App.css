@@ -15,18 +15,24 @@
   position: relative;
   border-radius: 0;
   overflow: hidden;
-  padding: 24px 18px 26px;
-  background: #fff;
+  padding: 20px 18px 34px;
+  background: transparent;
   box-shadow: none;
   isolation: isolate;
   background-size: cover;
-  background-position: center;
+  background-position: 70% -30px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 520px;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.82) 10%, rgba(255, 255, 255, 0.9) 60%, #ffffff 100%);
+  background: rgba(255, 255, 255, 0);
   z-index: 0;
 }
 
@@ -36,17 +42,19 @@
   gap: 6px;
   position: relative;
   z-index: 1;
-  margin-bottom: 14px;
+  margin-bottom: 40px;
+  margin-top: 0;
 }
 
 .hero-logo-mark {
-  width: 26px;
-  height: 26px;
+  height: 18px;
+  width: auto;
+  display: block;
 }
 
 .hero-brand {
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
   letter-spacing: 0.02em;
 }
 
@@ -54,14 +62,15 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 6px 12px;
+  padding: 8px 14px;
   background: #fff5d6;
   color: #a65f00;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   border-radius: 999px;
   position: relative;
   z-index: 1;
+  box-shadow: 0 6px 16px rgba(255, 186, 2, 0.24);
 }
 
 .pill .dot {
@@ -73,33 +82,34 @@
 }
 
 .hero h1 {
-  margin: 14px 0 10px;
-  font-size: 26px;
-  line-height: 1.25;
+  margin: 18px 0 12px;
+  font-size: 30px;
+  line-height: 1.28;
   color: #171717;
   position: relative;
   z-index: 1;
   letter-spacing: -0.01em;
+  font-weight: 600;
 }
 
 .hero-sub {
-  margin: 0 0 18px;
-  color: #525252;
-  font-size: 13px;
-  line-height: 1.55;
+  margin: 0 0 16px;
+  color: #666666;
+  font-size: 15px;
+  line-height: 1.6;
   position: relative;
   z-index: 1;
 }
 
 .primary-cta {
   display: block;
-  width: 82%;
+  width: 65%;
   max-width: 320px;
-  min-width: 240px;
+  min-width: 220px;
   padding: 12px 18px;
   background: #ffba02;
   color: #2c2c2c;
-  font-size: 14.5px;
+  font-size: 16px;
   font-weight: 700;
   border: none;
   border-radius: 999px;
