@@ -7,28 +7,20 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 0 18px 36px;
+  padding: 0 0 36px;
   background: #f7f7f7;
 }
 
 .hero {
   position: relative;
-  border-radius: 20px;
+  border-radius: 0;
   overflow: hidden;
   padding: 24px 18px 26px;
   background: #fff;
-  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.08);
+  box-shadow: none;
   isolation: isolate;
-}
-
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.85;
-  z-index: 0;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-overlay {
@@ -100,7 +92,10 @@
 }
 
 .primary-cta {
-  width: 100%;
+  display: block;
+  width: 82%;
+  max-width: 320px;
+  min-width: 240px;
   padding: 12px 18px;
   background: #ffba02;
   color: #2c2c2c;
@@ -113,6 +108,8 @@
   transition: transform 120ms ease, box-shadow 120ms ease;
   position: relative;
   z-index: 1;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .primary-cta:hover {
@@ -127,12 +124,12 @@
 .panel.dark {
   position: relative;
   padding: 22px 20px 32px;
-  border-radius: 16px;
-  background: linear-gradient(180deg, #171717 0%, #2f2f2f 46%, #ffffff 100%);
+  border-radius: 0;
+  background: linear-gradient(180deg, #171717 0%, #2f2f2f 46%, #f7f7f7 100%);
   color: #fefefe;
   overflow: hidden;
   min-height: 380px;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+  box-shadow: none;
 }
 
 .panel.dark .eyebrow {
@@ -238,10 +235,10 @@
 }
 
 .maker {
-  background: #fff;
-  border-radius: 16px;
-  padding: 22px 16px;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+  background: transparent;
+  border-radius: 0;
+  padding: 0 18px;
+  box-shadow: none;
 }
 
 .maker-grid {
@@ -312,12 +309,12 @@
 }
 
 .structure {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 20px 16px 22px;
+  background: transparent;
+  border-radius: 0;
+  padding: 8px 18px 22px;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.05);
+  box-shadow: none;
 }
 
 .structure .eyebrow {
@@ -344,9 +341,9 @@
 }
 
 .reminder-card {
-  background: #e8eef3;
-  border-radius: 12px;
-  padding: 10px;
+  background: #b9d5e6;
+  border-radius: 16px;
+  padding: 14px;
   display: flex;
   gap: 10px;
   align-items: stretch;
@@ -447,13 +444,13 @@
 }
 
 .journey {
-  background: linear-gradient(180deg, #ffffff 0%, #ececec 100%);
-  border-radius: 16px;
-  padding: 22px 16px 26px;
+  background: transparent;
+  border-radius: 0;
+  padding: 0 18px 20px;
   display: flex;
   flex-direction: column;
   gap: 14px;
-  box-shadow: inset 0 1px 0 #f0f0f0;
+  box-shadow: none;
 }
 
 .journey-grid {
@@ -568,7 +565,7 @@
 }
 
 .pricing {
-  padding: 4px;
+  padding: 0 18px;
 }
 
 .pricing-inner {
@@ -626,10 +623,10 @@
 }
 
 .recommend {
-  background: #fff;
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.05);
+  background: transparent;
+  border-radius: 0;
+  padding: 0 18px;
+  box-shadow: none;
 }
 
 .recommend h3 {
@@ -662,10 +659,10 @@
 }
 
 .faq {
-  background: #fff;
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.04);
+  background: transparent;
+  border-radius: 0;
+  padding: 0 18px;
+  box-shadow: none;
 }
 
 .faq h3 {
@@ -704,13 +701,13 @@
 
 .final {
   background: #f8c63b;
-  border-radius: 18px;
+  border-radius: 0;
   padding: 24px 20px 28px;
   position: relative;
   overflow: hidden;
   color: #171717;
   text-align: center;
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.08);
+  box-shadow: none;
 }
 
 .final-hero {

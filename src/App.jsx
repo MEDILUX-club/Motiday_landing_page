@@ -42,8 +42,7 @@ const faqs = [
 function App() {
   return (
     <main className="page">
-      <section className="hero">
-        <img className="hero-bg" src={heroImage} alt="" aria-hidden />
+      <section className="hero" style={{ backgroundImage: `url(${heroImage})` }}>
         <div className="hero-overlay" />
         <header className="hero-top">
           <img src={logoMark} alt="MOTIDAY" className="hero-logo-mark" />
@@ -63,7 +62,14 @@ function App() {
           <br />
           아무도 뭐라 안 하는데 왜 이렇게 미뤄질까?
         </p>
-        <button className="primary-cta">3주 운동 루틴 시작하기</button>
+        <a
+          className="primary-cta"
+          href="https://forms.gle/MuSxqxU2bWESGzmp8"
+          target="_blank"
+          rel="noreferrer"
+        >
+          3주 운동 루틴 시작하기
+        </a>
       </section>
 
       <section className="panel dark">
