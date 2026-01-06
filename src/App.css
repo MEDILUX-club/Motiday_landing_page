@@ -15,7 +15,7 @@
   position: relative;
   border-radius: 0;
   overflow: hidden;
-  padding: 20px 18px 34px;
+  padding: 20px 18px 16px;
   background: transparent;
   box-shadow: none;
   isolation: isolate;
@@ -134,11 +134,11 @@
 .panel.dark {
   position: relative;
   padding: 22px 20px 32px;
-  border-radius: 0;
-  background: linear-gradient(180deg, #171717 0%, #2f2f2f 46%, #f7f7f7 100%);
+  border-radius: 28px 28px 0 0;
+  background: linear-gradient(180deg, #171717 0%, #2b2b2b 48%, #f2f2f2 100%);
   color: #fefefe;
   overflow: hidden;
-  min-height: 380px;
+  min-height: 420px;
   box-shadow: none;
 }
 
@@ -153,56 +153,66 @@
 .panel.dark h2 {
   margin: 0 0 10px;
   text-align: center;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.4;
 }
 
 .money-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   color: #ffba02;
-  font-size: 20px;
+  font-size: 23px;
+  font-weight: 700;
   font-family: 'Moneygraphy', 'Pretendard', sans-serif;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
+}
+
+.money-line span {
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+.money-wave {
+  width: 30%;
+  max-width: 150px;
+  height: auto;
+  display: block;
+  align-self: flex-start;
+  margin-left: 22px;
 }
 
 .bubble {
   position: absolute;
-  max-width: 230px;
-  padding: 10px 14px;
-  font-size: 12px;
-  line-height: 1.5;
+  max-width: 2800px;
+  padding: 11px 18px;
+  font-size: 14px;
+  line-height: 1.45;
   color: #f5f5f5;
-  background: rgba(130, 130, 130, 0.95);
-  border: 1px solid rgba(159, 159, 159, 0.9);
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background: rgba(130, 130, 130, 0.9);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
 
 .bubble.b1 {
-  left: 36px;
-  top: 140px;
-  background: #868686;
+  left: 28px;
+  top: 180px;
+  background: #7a7a7a;
+  border-radius: 0 18px 18px 18px;
 }
 
 .bubble.b2 {
-  right: 28px;
-  top: 200px;
-  background: #717171;
+  right: 24px;
+  top: 260px;
+  background: #6b6b6b;
+  border-radius: 18px 0 18px 18px ;
 }
 
 .bubble.b3 {
   left: 24px;
-  bottom: 38px;
-  background: #575757;
-}
-
-.underline {
-  position: absolute;
-  top: 132px;
-  left: 60px;
-  width: 120px;
-  height: 5px;
-  background: #ffba02;
+  bottom: 15px;
+  background: #5b5b5b;
+  border-radius: 0 18px 18px 18px;
 }
 
 .section-header {

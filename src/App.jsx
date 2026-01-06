@@ -11,6 +11,7 @@ import chat2 from './assets/image5.png'
 import collage from './assets/image3.png'
 import report1 from './assets/image2.png'
 import report2 from './assets/image1.png'
+import wave from './assets/Vector.svg'
 
 const makers = [
   { name: '러닝널스', img: maker1 },
@@ -79,7 +80,10 @@ function App() {
           <br />
           혼자여도 계속하게 만드는 구조
         </h2>
-        <div className="money-line">왜 “해야지”는 항상 여기서 멈출까요?</div>
+        <div className="money-line">
+          <span>왜 “해야지”는 항상 여기서 멈출까요?</span>
+          <img src={wave} alt="" className="money-wave" />
+        </div>
         <div className="bubble b1">
           페이스를 잡아주는 사람이 없어서
           <br />
