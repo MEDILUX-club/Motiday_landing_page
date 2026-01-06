@@ -161,7 +161,7 @@ function App() {
           <li>매주, 그리고 마지막에, 내가 어떻게 해왔는지 정리합니다.</li>
         </ul>
         <p className="structure-quote">
-          우리가 만들고자 하는 것은 단 하나입니다.
+          우리가 만들고자 하는 것은 <span className="dot-underline">단 하나</span>입니다.
           <br />
           한 번쯤 쉬어도, 완전히 멈추지 않게 만드는 것.
         </p>

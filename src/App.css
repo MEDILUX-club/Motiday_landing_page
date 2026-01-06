@@ -489,6 +489,25 @@
   color: #2b2b2b;
 }
 
+.dot-underline {
+  position: relative;
+  display: inline-block;
+  padding-top: 6px;
+}
+
+.dot-underline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: #2b2b2b;
+  border-radius: 999px;
+  transform: translateX(-50%);
+  box-shadow: -18px 0 0 #2b2b2b, 16px 0 0 #2b2b2b;
+}
+
 .circle {
   background: transparent;
   display: flex;
