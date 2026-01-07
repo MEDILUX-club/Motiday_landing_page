@@ -122,6 +122,14 @@
   margin: 0 auto;
 }
 
+.hero .primary-cta {
+  white-space: nowrap;
+  width: min(320px, 92%);
+  min-width: 0;
+  font-size: clamp(12px, 4.2vw, 17px);
+  padding: 12px 14px;
+}
+
 .primary-cta:hover {
   transform: translateY(-1px);
   box-shadow: 0 12px 24px rgba(255, 194, 98, 0.65);

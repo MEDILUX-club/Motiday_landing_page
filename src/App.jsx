@@ -68,7 +68,7 @@ function App() {
           target="_blank"
           rel="noreferrer"
         >
-          3주 운동 루틴 시작하기
+          클릭하고 3주 운동 루틴 시작하기 
         </a>
       </section>
 
@@ -357,7 +357,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          👉 3주 운동 루틴 시작하기
+          👉 클릭하고 3주 운동 루틴 시작하기
         </a>
       </section>
     </main>
